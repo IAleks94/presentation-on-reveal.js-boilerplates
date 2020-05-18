@@ -122,6 +122,7 @@ module.exports = (env) => ({
   ],
   resolve: {
     alias: {
+      // reveal: path.resolve(__dirname, 'node_modules/reveal.js/css/'),
       sass: path.resolve(__dirname, 'src/sass/'),
       "slides": path.resolve(__dirname, 'src/slides'),
     },
