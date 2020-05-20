@@ -1,8 +1,43 @@
 @import '../../node_modules/reveal.js/css/reveal.css';
-@import '../../node_modules/reveal.js/css/theme/moon.css';
+@import '../../node_modules/reveal.js/css/theme/black.css';
+// @import '../../node_modules/reveal.js/lib/css/monokai.css';
+
 
 .title {
   color: #fff;
   top: 150px;
   position: relative;
+}
+
+body {
+  background-color: #282c34;
+  background-image: url('/src/assets/images/react_svg.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 100px;
+  background-size: 50% auto;
+}
+
+p {
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+span{
+  margin-top: 150px;
+}
+
+.padding{
+position: relative;
+top: 50px;
+}
+
+.left {
+  float: left;
+  margin: 0 150px;
+}
+
+.right {
+  float: right;
+  margin: 0 150px;
 }
