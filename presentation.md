@@ -40,7 +40,7 @@ JSX produces React “elements”.
 
 React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
 
-Instead of artificially separating technologies by putting markup and logic in separate files, (usually we have an html file containing markup, a JS file containing logic and a css file containing styles) React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you otherwise.(that is, in essence, we are writing HTML inside a JS file).
+Instead of artificially separating technologies by putting markup and logic in separate files, (usually we have an html file containing markup, a JS file containing logic and a css file containing styles) React separates concerns with loosely coupled units called “components” that contain both.(that is, in essence, we are writing HTML inside a JS file).
 
 ### subSlide 2 for Slide 3 "styled components (very little)"
 
