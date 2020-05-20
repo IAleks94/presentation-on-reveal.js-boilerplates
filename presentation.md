@@ -8,23 +8,23 @@ React is a declarative, efficient, and flexible JavaScript library for building 
 
 + Declarative:
 
-> React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+> React makes it painless to create interactive UIs. Describe how parts of the application interface look in different states and React will efficiently update and render the right components when your data changes.
 
 > Declarative views make your code more predictable and easier to debug.
 
 + Component-Based:
 
-> Encapsulated components have their own state, and then are combined into complex user interfaces..
+> Encapsulated components have their own state, and then are combined into complex user interfaces.
 
 > Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
 
-> In small projects, this is not as effective as the components are often unique. But on a large project, it will allow reuse of once created components.
+> It’s not such effective in small projects because components are often unique. But it allows reuse of once created components in a large project.
 
 ***
 
 ### Slide 2 "React Only Updates What’s Necessary"
 
-Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+React elements are simple and cheaper to create in contrast with browsers’ DOM elements. React DOM takes care of updating the DOM to match the React elements.
 
 React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
 
@@ -32,7 +32,7 @@ React DOM compares the element and its children to the previous one, and only ap
 
 ### Slide 3 "A Simple Component"
 
-React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX.That allows the developer to more easily present the final result. Input data that is passed into the component can be accessed by render() via this.props.
+React components implement a **render()** method that takes input data and returns what to display. This example uses an XML-like syntax called JSX.That allows the developer to more easily present the final result. Input data that is passed into the component can be accessed by **render()** via this.props.
 
 ### subSlide 1 for Slide 3 "JSX"
 
@@ -62,7 +62,7 @@ This means that you can use JSX inside of **if** statements and **for** loops, a
 
 ### subSlide 5 for Slide 3 "Function and Class Components"
 
-Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called **“props”**) and return React elements describing what should appear on the screen.
 
 A component can be declared both through a class and a function:
 
@@ -78,19 +78,11 @@ For example, we can create an App component that renders Welcome many times:
 
 ### Slide 4 "A Stateful Component"
 
-In addition to taking input data (accessed via this.props), a component can maintain internal state data (accessed via this.state). When a component’s state data changes, the rendered markup will be updated by re-invoking render().
+In addition to taking input data (accessed via **this.props**), a component can maintain internal state data (accessed via **this.state**). When a component’s state data changes, the rendered markup will be updated by re-invoking **render()**.
 
 State is similar to props, but it is private and fully controlled by the component.
 
 Note that unlike regular JS, in React, changes to the state object are made through the **setState()** method and not by directly accessing the object key;
-
-### subSlide 1 for Slide 4 "Classes and Hooks"
-
-Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
-
-In addition to making code reuse and code organization more difficult, we’ve found that classes can be a large barrier to learning React. You have to understand how this works in JavaScript, which is very different from how it works in most languages. You have to remember to bind the event handlers. Without unstable syntax proposals, the code is very verbose. People can understand props, state, and top-down data flow perfectly well but still struggle with classes. The distinction between function and class components in React and when to use each one leads to disagreements even between experienced React developers.
-
-To solve these problems, Hooks let you use more of React’s features without classes. Conceptually, React components have always been closer to functions. Hooks embrace functions, but without sacrificing the practical spirit of React. Hooks provide access to imperative escape hatches and don’t require you to learn complex functional or reactive programming techniques.
 
 ***
 
@@ -108,14 +100,12 @@ The **componentDidMount()** method is launched after the component has rendered 
 
 The **componentWillUnmount()** method is launched when the element is "unmounted", in it we delete the timer.
 
-### subSlide 1 for Slide 5 "The Data Flows Down"
-
-Neither parent nor child components can know if a certain component is stateful or stateless, and they shouldn’t care whether it is defined as a function or a class.
-
-This is why state is often called local or encapsulated. It is not accessible to any component other than the one that owns and sets it.
-
-A component may choose to pass its state down as props to its child components:
-
-The FormattedDate component would receive the date in its props and wouldn’t know whether it came from the Clock’s state, from the Clock’s props, or was typed by hand.
-
 ***
+
+### subSlide 6  "Classes and Hooks"
+
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+In addition to making code reuse and code organization more difficult, we’ve found that classes can be a large barrier to learning React. You have to understand how this works in JavaScript, which is very different from how it works in most languages. You have to remember to bind the event handlers. Without unstable syntax proposals, the code is very verbose. People can understand props, state, and top-down data flow perfectly well but still struggle with classes. The distinction between function and class components in React and when to use each one leads to disagreements even between experienced React developers.
+
+To solve these problems, Hooks let you use more of React’s features without classes. Conceptually, React components have always been closer to functions. Hooks embrace functions, but without sacrificing the practical spirit of React. Hooks provide access to imperative escape hatches and don’t require you to learn complex functional or reactive programming techniques.
