@@ -76,6 +76,28 @@ document.body.innerHTML = `<div class="reveal">
         </div>
       </div>
     </section>
+    <section>
+    <h5>Наследование от классов Phaser</h5>
+    <img data-src="images/ES6class.PNG" height = '560px' >
+    </section>
+    <section>
+    <h5>От чего наследоваться ???</h5>
+    <img data-src="images/ES6classFrom.png" >
+    </section>
+    </section>
+    <section>
+    <section>
+    <img data-src="images/typeScriptLogo.jpeg" >
+    </section>
+    <section>
+    <img data-src="images/typeScript1.PNG" height = '560px'>
+    </section>
+    <section>
+    <img data-src="images/typeScript2.PNG" height = '560px'>
+    </section>
+    </section>
+    <section>
+    <img data-src="images/end.jpg">
     </section>
 </div>
 </div>`;
